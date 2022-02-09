@@ -54,18 +54,19 @@ namespace WebApi.Controllers
             return BadRequest();
         }
 
+        // ***** under development ***** //
         // ***** CREATE ***** //
-        [HttpPost]
-        public IActionResult AddStudent([FromBody] CreateStudentModel newStudent)
-        {
+        //[HttpPost]
+        //public IActionResult AddStudent([FromBody] CreateStudentModel newStudent)
+        //{
 
-            CreateStudentCommand command = new CreateStudentCommand(_context, _mapper);
-            command.Model = newStudent;
+        //    CreateStudentCommand command = new CreateStudentCommand(_context, _mapper);
+        //    command.Model = newStudent;
 
-            CreateStudentCommandValidator validator = new CreateStudentCommandValidator();
-            validator.ValidateAndThrow(command);
+        //    CreateStudentCommandValidator validator = new CreateStudentCommandValidator();
+        //    validator.ValidateAndThrow(command);
 
-            return Ok();
-        }
+        //    return Ok();
+        //}
     }
 }

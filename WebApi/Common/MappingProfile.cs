@@ -26,8 +26,10 @@ namespace WebApi.Common
 
             CreateMap<Course, StudentDetailViewModel.StudentCourseVM>();
 
+
+            // ***** under development ***** //
             // Create Student
-            CreateMap<CreateStudentModel, Student>();
+            //CreateMap<CreateStudentModel, Student>();
         }
     }
 }
