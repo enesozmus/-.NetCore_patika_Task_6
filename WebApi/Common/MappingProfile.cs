@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using WebApi.Application.StudentOperations.Commands.CreateStudent;
 using WebApi.Application.StudentOperations.Queries.GetStudentDetail;
 using WebApi.Application.StudentOperations.Queries.GetStudents;
 using WebApi.Entities;
@@ -9,11 +10,10 @@ namespace WebApi.Common
     {
         public MappingProfile()
         {
+            // Get Students
             CreateMap<Student, StudentsViewModel>()
                 .ForMember(x => x.AdvisoryTeacher, opt => opt
-                .MapFrom(src => src.AdvisoryTeacher.FirstName + " " + src.AdvisoryTeacher.LastName))
-                .ForMember(x => x.Book, opt => opt
-                .MapFrom(src => src.Book !=null ? src.Book.Where(m => m.StudentId == src.StudentId).ToList() : null));
+                .MapFrom(src => src.AdvisoryTeacher.FirstName + " " + src.AdvisoryTeacher.LastName));
 
 
             // Get Student Detail
@@ -25,6 +25,9 @@ namespace WebApi.Common
                 .MapFrom(src => src.Book != null ? src.Book.Where(m => m.StudentId == src.StudentId).ToList() : null));
 
             CreateMap<Course, StudentDetailViewModel.StudentCourseVM>();
+
+            // Create Student
+            CreateMap<CreateStudentModel, Student>();
         }
     }
 }

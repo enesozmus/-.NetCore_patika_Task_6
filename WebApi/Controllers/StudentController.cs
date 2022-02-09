@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
+using WebApi.Application.StudentOperations.Commands.CreateStudent;
 using WebApi.Application.StudentOperations.Commands.DeleteStudent;
 using WebApi.Application.StudentOperations.Queries.GetStudentDetail;
 using WebApi.Application.StudentOperations.Queries.GetStudents;
@@ -51,6 +52,20 @@ namespace WebApi.Controllers
             if (result)
                 return Ok();
             return BadRequest();
+        }
+
+        // ***** CREATE ***** //
+        [HttpPost]
+        public IActionResult AddStudent([FromBody] CreateStudentModel newStudent)
+        {
+
+            CreateStudentCommand command = new CreateStudentCommand(_context, _mapper);
+            command.Model = newStudent;
+
+            CreateStudentCommandValidator validator = new CreateStudentCommandValidator();
+            validator.ValidateAndThrow(command);
+
+            return Ok();
         }
     }
 }

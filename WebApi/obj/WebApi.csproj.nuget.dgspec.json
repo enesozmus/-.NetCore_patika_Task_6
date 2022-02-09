@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ensoz\\Videos\\WebApiSln\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\ensoz\\Documents\\WebApi\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ensoz\\Videos\\WebApiSln\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\ensoz\\Documents\\WebApi\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ensoz\\Videos\\WebApiSln\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\ensoz\\Documents\\WebApi\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\ensoz\\Videos\\WebApiSln\\WebApi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\ensoz\\Documents\\WebApi\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\ensoz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ensoz\\Videos\\WebApiSln\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\ensoz\\Documents\\WebApi\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ensoz\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -20,7 +20,6 @@ namespace WebApi.Application.StudentOperations.Queries.GetStudents
         {
             var studentList = _context.Students
                                     .Include(x => x.AdvisoryTeacher)
-                                    .Include(x => x.Book)
                                     .OrderBy(s => s.StudentId)
                                     .ToList<Student>();
 
@@ -34,8 +33,8 @@ namespace WebApi.Application.StudentOperations.Queries.GetStudents
         public int StudentId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public int Number { get; set; }
         public DateTime Birthday { get; set; }
         public string AdvisoryTeacher { get; set; }
-        public List<Book> Book { get; set; }
     }
 }

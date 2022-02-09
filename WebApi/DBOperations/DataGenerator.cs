@@ -53,29 +53,29 @@ namespace WebApi.DBOperations
                         new AdvisoryTeacher
                         {
                             AdvisoryId = 1,
-                            FirstName = "advisory_1",
-                            LastName = "teacher_1",
+                            FirstName = "advisoryname",
+                            LastName = "lastname",
                             StudentId = 1
                         },
                         new AdvisoryTeacher
                         {
                             AdvisoryId = 2,
-                            FirstName = "advisory_2",
-                            LastName = "teacher_2",
+                            FirstName = "advisoryname",
+                            LastName = "lastname",
                             StudentId = 2
                         },
                         new AdvisoryTeacher
                         {
                             AdvisoryId = 3,
-                            FirstName = "advisory_3",
-                            LastName = "teacher_3",
+                            FirstName = "advisoryname",
+                            LastName = "lastname",
                             StudentId = 3
                         },
                         new AdvisoryTeacher
                         {
                             AdvisoryId = 4,
-                            FirstName = "advisory_4",
-                            LastName = "teacher_4",
+                            FirstName = "advisoryname",
+                            LastName = "lastname",
                             StudentId = 4
                         });
 
@@ -89,7 +89,7 @@ namespace WebApi.DBOperations
                         new Book
                         {
                             Author = "author_2",
-                            Name = "book_1",
+                            Name = "book_2",
                             StudentId = 2
 
                         },
@@ -110,12 +110,10 @@ namespace WebApi.DBOperations
                 context.Courses.AddRange(
                         new Course
                         {
-                            Id = 1,
                             Name = "course_1"
                         },
                         new Course
                         {
-                            Id = 2,
                             Name = "course_2"
                         });
 

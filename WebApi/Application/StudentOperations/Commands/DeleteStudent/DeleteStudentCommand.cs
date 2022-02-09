@@ -15,12 +15,12 @@ namespace WebApi.Application.StudentOperations.Commands.DeleteStudent
         {
             var student = _context.Students.SingleOrDefault(a => a.StudentId == StudentId);
             if (student == null)
-                throw new InvalidOperationException("Silmek istediğiniz öğrenci bulunamadı!");
+                throw new InvalidOperationException("Silmek istediginiz ogrenci bulunamadi!");
 
             // Other Start
             var advisory = _context.AdvisoryTeachers.Any(a => a.StudentId == StudentId);
             if(advisory != null)
-                throw new InvalidOperationException("Önce rehber öğretmen silinmelidir!");
+                throw new InvalidOperationException("Once rehber ogretmen silinmelidir!");
             //var books = _context.Books.Any(x => x.StudentId == Id);
             //if (!books)
             //    throw new InvalidOperationException("Önce kitaplar silinmelidir!");

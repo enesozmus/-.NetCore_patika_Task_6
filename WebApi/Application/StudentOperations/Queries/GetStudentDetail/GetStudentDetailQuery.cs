@@ -26,7 +26,7 @@ namespace WebApi.Application.StudentOperations.Queries.GetStudentDetail
                 .SingleOrDefault(x => x.StudentId == StudentId);
 
             if (student is null)
-                throw new InvalidOperationException("Aradığınız öğrenci bulunamadı!");
+                throw new InvalidOperationException("Aradıgınız ogrenci bulunamadi!");
 
             StudentDetailViewModel vm = _mapper.Map<StudentDetailViewModel>(student);
             return vm;
@@ -37,14 +37,14 @@ namespace WebApi.Application.StudentOperations.Queries.GetStudentDetail
         public int StudentId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public int YearofBirth { get; set; }
+        public DateTime Birthday { get; set; }
         public string AdvisoryTeacher { get; set; }
         public List<Book> Book { get; set; }
         public List<StudentCourseVM> Courses { get; set; }
 
         public struct StudentCourseVM
         {
-            public int CourseId { get; set; }
+            public int Id { get; set; }
             public string Name { get; set; }
         }
     }
