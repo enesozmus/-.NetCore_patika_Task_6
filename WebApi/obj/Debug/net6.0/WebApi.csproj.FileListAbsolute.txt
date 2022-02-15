@@ -66,6 +66,7 @@ C:\Users\ensoz\Documents\WebApi\WebApi\obj\Debug\net6.0\WebApi.dll
 C:\Users\ensoz\Documents\WebApi\WebApi\obj\Debug\net6.0\ref\WebApi.dll
 C:\Users\ensoz\Documents\WebApi\WebApi\obj\Debug\net6.0\WebApi.pdb
 C:\Users\ensoz\Documents\WebApi\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\ensoz\Pictures\-.NetCore_patika_Task_6-main\WebApi\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\ensoz\Pictures\-.NetCore_patika_Task_6-main\WebApi\bin\Debug\net6.0\appsettings.json
 C:\Users\ensoz\Pictures\-.NetCore_patika_Task_6-main\WebApi\bin\Debug\net6.0\WebApi.exe
@@ -100,3 +101,5 @@ C:\Users\ensoz\Pictures\-.NetCore_patika_Task_6-main\WebApi\obj\Debug\net6.0\Web
 C:\Users\ensoz\Pictures\-.NetCore_patika_Task_6-main\WebApi\obj\Debug\net6.0\ref\WebApi.dll
 C:\Users\ensoz\Pictures\-.NetCore_patika_Task_6-main\WebApi\obj\Debug\net6.0\WebApi.pdb
 C:\Users\ensoz\Pictures\-.NetCore_patika_Task_6-main\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
+=======
+>>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e

@@ -9,7 +9,11 @@ namespace WebApi.Application.StudentOperations.Queries.GetStudentDetail
     {
         private readonly SchoolDbContext _context;
         private readonly IMapper _mapper;
+<<<<<<< HEAD
         public int studentId { get; set; }
+=======
+        public int StudentId { get; set; }
+>>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
         public GetStudentDetailQuery(SchoolDbContext context, IMapper mapper)
         {
             _context = context;
@@ -23,7 +27,11 @@ namespace WebApi.Application.StudentOperations.Queries.GetStudentDetail
                 .Include(x => x.Book)
                 .Include(s => s.StudentCourses)
                 .ThenInclude(c => c.Course)
+<<<<<<< HEAD
                 .SingleOrDefault(x => x.StudentId == studentId);
+=======
+                .SingleOrDefault(x => x.StudentId == StudentId);
+>>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
 
             if (student is null)
                 throw new InvalidOperationException("Aradıgınız ogrenci bulunamadi!");

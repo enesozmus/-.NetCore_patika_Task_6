@@ -53,29 +53,49 @@ namespace WebApi.DBOperations
                         new AdvisoryTeacher
                         {
                             AdvisoryId = 1,
+<<<<<<< HEAD
                             FirstName = "teacher's name",
                             LastName = "1111",
+=======
+                            FirstName = "advisoryname",
+                            LastName = "lastname",
+>>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
                             StudentId = 1
                         },
                         new AdvisoryTeacher
                         {
                             AdvisoryId = 2,
+<<<<<<< HEAD
                             FirstName = "teacher's name",
                             LastName = "22222",
+=======
+                            FirstName = "advisoryname",
+                            LastName = "lastname",
+>>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
                             StudentId = 2
                         },
                         new AdvisoryTeacher
                         {
                             AdvisoryId = 3,
+<<<<<<< HEAD
                             FirstName = "teacher's name",
                             LastName = "3333",
+=======
+                            FirstName = "advisoryname",
+                            LastName = "lastname",
+>>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
                             StudentId = 3
                         },
                         new AdvisoryTeacher
                         {
                             AdvisoryId = 4,
+<<<<<<< HEAD
                             FirstName = "teacher's name",
                             LastName = "4444",
+=======
+                            FirstName = "advisoryname",
+                            LastName = "lastname",
+>>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
                             StudentId = 4
                         });
 

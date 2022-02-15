@@ -955,11 +955,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ensoz\\Pictures\\-.NetCore_patika_Task_6-main\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
       "projectPath": "C:\\Users\\ensoz\\Pictures\\-.NetCore_patika_Task_6-main\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\ensoz\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ensoz\\Pictures\\-.NetCore_patika_Task_6-main\\WebApi\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\ensoz\\Documents\\WebApi\\WebApi\\WebApi.csproj",
+      "projectName": "WebApi",
+      "projectPath": "C:\\Users\\ensoz\\Documents\\WebApi\\WebApi\\WebApi.csproj",
+      "packagesPath": "C:\\Users\\ensoz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ensoz\\Documents\\WebApi\\WebApi\\obj\\",
+>>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ensoz\\AppData\\Roaming\\NuGet\\NuGet.Config",

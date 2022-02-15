@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "1D/SpHpFcuqu2f5A2Z/jAILtZt0tjie1AD8bFQZs0L8I2uHEhV+Nq1ubtEhmZ2o1a0HRKau2r6YuVUZzScWAqg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ensoz\\Pictures\\-.NetCore_patika_Task_6-main\\WebApi\\WebApi.csproj",
+=======
+  "dgSpecHash": "NZUX5XsKStbFcEKsTys53fb5AAkn3l+LgRC75nmZyUWk6jVz4E0XGjEdvMcdDSMOWV6b1JfZBjWki2flX7+MAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ensoz\\Documents\\WebApi\\WebApi\\WebApi.csproj",
+>>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
   "expectedPackageFiles": [
     "C:\\Users\\ensoz\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\ensoz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
