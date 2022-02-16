@@ -5,6 +5,7 @@ using WebApi.Application.AdvisoryTeacherOperations.Queries.GetTeacherDetail;
 using WebApi.Application.CourseOperations.Commands.CreateCourse;
 using WebApi.Application.CourseOperations.Queries.GetCourseDetail;
 using WebApi.Application.CourseOperations.Queries.GetCourses;
+using WebApi.Application.ExamOperations.Queries.GetExamDetail;
 using WebApi.Application.ExamOperations.Queries.GetExams;
 using WebApi.Application.StudentOperations.Commands.CreateStudent;
 using WebApi.Application.StudentOperations.Queries.GetStudentDetail;
@@ -18,7 +19,6 @@ namespace WebApi.Common
         public MappingProfile()
         {
             // ***** Student ***** //
-
 
                 // Get Students
                 CreateMap<Student, StudentsViewModel>()
@@ -35,13 +35,11 @@ namespace WebApi.Common
 
                 CreateMap<Course, StudentDetailViewModel.StudentCourseVM>();
 
-
                 // Create Student
                 CreateMap<CreateStudentModel, Student>();
 
 
             // ***** AdvisoryTeacher ***** //
-
 
                 // Get AdvisoryTeachers
                 CreateMap<AdvisoryTeacher, TeachersViewModel>();
@@ -55,7 +53,6 @@ namespace WebApi.Common
 
             // ***** Course ***** //
 
-
                 // Get Courses
                 CreateMap<Course, CoursesViewModel>();
 
@@ -68,10 +65,11 @@ namespace WebApi.Common
 
             // ***** Exam ***** //
 
-
                 // Get Exams
                 CreateMap<Exam, ExamsViewModel>();
 
+                // Get Exam Detail 
+                CreateMap<Exam, ExamDetailViewModel>();
         }
     }
 }

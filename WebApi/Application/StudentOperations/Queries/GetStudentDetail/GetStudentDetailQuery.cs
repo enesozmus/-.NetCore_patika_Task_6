@@ -10,7 +10,6 @@ namespace WebApi.Application.StudentOperations.Queries.GetStudentDetail
         private readonly SchoolDbContext _context;
         private readonly IMapper _mapper;
         public int studentId { get; set; }
-        public int StudentId { get; set; }
 
         public GetStudentDetailQuery(SchoolDbContext context, IMapper mapper)
         {
