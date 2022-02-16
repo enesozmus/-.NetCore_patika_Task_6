@@ -1,4 +1,4 @@
-## Task Under Development → Crud Operations
+## Task For Patika.dev → Crud Operations
 
 ### Architecture
 * Object Orient Programing
@@ -15,3 +15,6 @@
 * AutoMapper.Extensions.Microsoft.DependencyInjection
 * Fluent Validation
 * Newtonsoft.Json
+
+### Entitiy Relations
+* inside GetStudentDetailQuery Operation
