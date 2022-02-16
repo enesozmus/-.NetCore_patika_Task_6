@@ -4,7 +4,6 @@ using WebApi.Entities;
 
 namespace WebApi.Application.StudentOperations.Commands.CreateStudent
 {
-<<<<<<< HEAD
     public class CreateStudentCommand
     {
         public CreateStudentModel Model { get; set; }
@@ -36,38 +35,5 @@ namespace WebApi.Application.StudentOperations.Commands.CreateStudent
         public string LastName { get; set; }
         public DateTime Birthday { get; set; }
         public int Number { get; set; }
-=======
-    // ***** under development ***** //
-    public class CreateStudentCommand
-    {
-    //    public CreateStudentModel Model { get; set; }
-    //    private readonly SchoolDbContext _context;
-    //    private readonly IMapper _mapper;
-
-    //    public CreateStudentCommand(SchoolDbContext context, IMapper mapper)
-    //    {
-    //        _context = context;
-    //        _mapper = mapper;
-    //    }
-
-    //    public void Handle()
-    //    {
-    //        var student = _context.Students.SingleOrDefault(x => x.FirstName == Model.FirstName && x.Number == Model.Number);
-    //        if (student is not null)
-    //            throw new InvalidOperationException("Eklemeye çaliştiginiz ogrenci zaten mevcut!");
-    //        student = _mapper.Map<Student>(Model);
-    //        _context.Students.Add(student);
-    //        _context.SaveChanges();
-
-    //    }
-    //}
-
-    //public class CreateStudentModel
-    //{
-    //    public string FirstName { get; set; }
-    //    public string LastName { get; set; }
-    //    public DateTime Birthday { get; set; }
-    //    public int Number { get; set; }
->>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
     }
 }

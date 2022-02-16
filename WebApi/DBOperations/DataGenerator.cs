@@ -12,7 +12,7 @@ namespace WebApi.DBOperations
         {
             using (var context = new SchoolDbContext(serviceProvider.GetRequiredService<DbContextOptions<SchoolDbContext>>()))
             {
-                if (context.AdvisoryTeachers.Any() || context.Students.Any() || context.Books.Any())
+                if (context.AdvisoryTeachers.Any() || context.Students.Any() || context.Exams.Any())
                 {
                     return;
                 }
@@ -53,77 +53,64 @@ namespace WebApi.DBOperations
                         new AdvisoryTeacher
                         {
                             AdvisoryId = 1,
-<<<<<<< HEAD
                             FirstName = "teacher's name",
                             LastName = "1111",
-=======
-                            FirstName = "advisoryname",
-                            LastName = "lastname",
->>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
                             StudentId = 1
                         },
                         new AdvisoryTeacher
                         {
                             AdvisoryId = 2,
-<<<<<<< HEAD
                             FirstName = "teacher's name",
                             LastName = "22222",
-=======
-                            FirstName = "advisoryname",
-                            LastName = "lastname",
->>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
                             StudentId = 2
                         },
                         new AdvisoryTeacher
                         {
                             AdvisoryId = 3,
-<<<<<<< HEAD
                             FirstName = "teacher's name",
                             LastName = "3333",
-=======
-                            FirstName = "advisoryname",
-                            LastName = "lastname",
->>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
                             StudentId = 3
                         },
                         new AdvisoryTeacher
                         {
                             AdvisoryId = 4,
-<<<<<<< HEAD
                             FirstName = "teacher's name",
                             LastName = "4444",
-=======
-                            FirstName = "advisoryname",
-                            LastName = "lastname",
->>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
                             StudentId = 4
                         });
 
-                context.Books.AddRange(
-                        new Book
+                context.Exams.AddRange(
+                        new Exam
                         {
-                            Author = "author_1",
-                            Name = "book_1",
+                            Name = "exam_1",
+                            Score = 100,
                             StudentId = 2
                         },
-                        new Book
+                        new Exam
                         {
-                            Author = "author_2",
-                            Name = "book_2",
-                            StudentId = 2
-
-                        },
-                        new Book
-                        {
-                            Author = "author_3",
-                            Name = "book_3",
+                            Name = "exam_2",
+                            Score = 95,
                             StudentId = 2
 
                         },
-                        new Book
+                        new Exam
                         {
-                            Author = "author_4",
-                            Name = "book_4",
+                            Name = "exam_3",
+                            Score = 90,
+                            StudentId = 3
+
+                        },
+                        new Exam
+                        {
+                            Name = "exam_4",
+                            Score = 85,
+                            StudentId = 2
+
+                        },
+                        new Exam
+                        {
+                            Name = "exam_5",
+                            Score = 80,
                             StudentId = 2
                         });
                 

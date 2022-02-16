@@ -11,22 +11,22 @@ namespace WebApi.DBOperations
         }
 
         public DbSet<Student> Students { get; set; }
-        public DbSet<Book> Books { get; set; }
+        public DbSet<Exam> Exams { get; set; }
         public DbSet<AdvisoryTeacher> AdvisoryTeachers { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<StudentCourse> StudentCourses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Book>(ConfigureBook);
+            modelBuilder.Entity<Exam>(ConfigureExam);
             modelBuilder.Entity<StudentCourse>(ConfigureStudentCourse);
 
             base.OnModelCreating(modelBuilder);
         }
 
-        private void ConfigureBook(EntityTypeBuilder<Book> modelBuilder)
+        private void ConfigureExam(EntityTypeBuilder<Exam> modelBuilder)
         {
-            modelBuilder.HasKey(mc => new { mc.StudentId, mc.Id });
+            modelBuilder.HasKey(mc => new { mc.StudentId, mc.ExamId });
         }
 
         private void ConfigureStudentCourse(EntityTypeBuilder<StudentCourse> modelBuilder)

@@ -19,7 +19,7 @@ namespace WebApi.Application.CourseOperations.Commands.CreateCourse
         public void Handle()
         {
             var course = _context.Courses
-                                    .SingleOrDefault(x => x.Id == Model.Id && x.Name == Model.Name);
+                                    .SingleOrDefault(x => x.CourseId == Model.CourseId && x.Name == Model.Name);
             if (course is not null)
                 throw new InvalidOperationException("Eklemeye çaliştiginiz kurs/ders zaten mevcut!");
 
@@ -31,7 +31,7 @@ namespace WebApi.Application.CourseOperations.Commands.CreateCourse
 
     public class CreateCourseModel
     {
-        public int Id { get; set; }
+        public int CourseId { get; set; }
         public string Name { get; set; }
     }
 }

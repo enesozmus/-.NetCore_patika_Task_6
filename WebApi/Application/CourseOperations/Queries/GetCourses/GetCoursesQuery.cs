@@ -18,7 +18,7 @@ namespace WebApi.Application.CourseOperations.Queries.GetCourses
         public List<CoursesViewModel> Handle()
         {
             var courseList = _context.Courses
-                                    .OrderBy(s => s.Id)
+                                    .OrderBy(s => s.CourseId)
                                     .ToList<Course>();
 
             List<CoursesViewModel> vm = _mapper.Map<List<CoursesViewModel>>(courseList);
@@ -28,7 +28,7 @@ namespace WebApi.Application.CourseOperations.Queries.GetCourses
 
     public class CoursesViewModel
     {
-        public int Id { get; set; }
+        public int CourseId { get; set; }
         public string Name { get; set; }
     }
 }

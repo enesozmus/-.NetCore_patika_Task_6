@@ -6,7 +6,7 @@ namespace WebApi.Application.CourseOperations.Commands.CreateCourse
     {
         public CreateCourseCommandValidator()
         {
-            RuleFor(command => command.Model.Id).GreaterThan(0);
+            RuleFor(command => command.Model.CourseId).GreaterThan(0);
             RuleFor(command => command.Model.Name).NotEmpty().MinimumLength(3);
         }
     }

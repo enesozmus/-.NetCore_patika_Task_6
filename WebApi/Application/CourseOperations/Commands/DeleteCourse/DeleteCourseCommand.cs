@@ -14,7 +14,7 @@ namespace WebApi.Application.CourseOperations.Commands.DeleteCourse
         public bool Handle()
         {
             var course = _context.Courses
-                                       .SingleOrDefault(a => a.Id == courseId);
+                                       .SingleOrDefault(a => a.CourseId == courseId);
             if (course == null)
                 throw new InvalidOperationException("Silmek istediginiz kurs/ders bulunamadi!");
 

@@ -11,8 +11,7 @@ namespace WebApi.Entities
         public DateTime Birthday { get; set; }
         public int Number { get; set; }
         public AdvisoryTeacher AdvisoryTeacher { get; set; }                    // relations → one to one
-        public List<Book> Book { get; set; }                                    // relations → one to many
+        public List<Exam> Exam { get; set; }                                    // relations → one to many
         public ICollection<StudentCourse> StudentCourses { get; set; }          // relations → many to many
-        
     }
 }

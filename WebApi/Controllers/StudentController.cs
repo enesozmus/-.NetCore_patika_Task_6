@@ -3,10 +3,7 @@ using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Application.StudentOperations.Commands.CreateStudent;
 using WebApi.Application.StudentOperations.Commands.DeleteStudent;
-<<<<<<< HEAD
 using WebApi.Application.StudentOperations.Commands.UpdateStudent;
-=======
->>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
 using WebApi.Application.StudentOperations.Queries.GetStudentDetail;
 using WebApi.Application.StudentOperations.Queries.GetStudents;
 using WebApi.DBOperations;
@@ -25,11 +22,8 @@ namespace WebApi.Controllers
             _mapper = mapper;
         }
 
-<<<<<<< HEAD
 
-        // ***** GET ***** //
-=======
->>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
+        // ***** GET All ***** //
         [HttpGet]
         public IActionResult GetStudents()
         {
@@ -38,27 +32,21 @@ namespace WebApi.Controllers
             return Ok(result);
         }
 
-<<<<<<< HEAD
 
         // ***** GET {id} ***** //
-=======
->>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
         [HttpGet("{id}")]
         public IActionResult GetStudentDetail(int id)
         {
             GetStudentDetailQuery query = new GetStudentDetailQuery(_context, _mapper);
-<<<<<<< HEAD
             query.studentId = id;
-=======
-            query.StudentId = id;
->>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
+
             GetStudentDetailQueryValidator validator = new GetStudentDetailQueryValidator();
             validator.ValidateAndThrow(query);
             var result = query.Handle();
             return Ok(result);
         }
 
-<<<<<<< HEAD
+
         // ***** CREATE ***** //
         [HttpPost]
         public IActionResult AddStudent([FromBody] CreateStudentModel newStudent)
@@ -91,8 +79,6 @@ namespace WebApi.Controllers
         }
 
 
-=======
->>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e
         // ***** DELETE ***** //
         [HttpDelete("{id}")]
         public IActionResult DeleteStudent(int id)
@@ -103,31 +89,9 @@ namespace WebApi.Controllers
             validator.ValidateAndThrow(command);
             var result = command.Handle();
             if (result)
-<<<<<<< HEAD
+
                 return Ok("Ogrenci basariyla silindi!");
             return BadRequest();
         }
     }
 }
-=======
-                return Ok();
-            return BadRequest();
-        }
-
-        // ***** under development ***** //
-        // ***** CREATE ***** //
-        //[HttpPost]
-        //public IActionResult AddStudent([FromBody] CreateStudentModel newStudent)
-        //{
-
-        //    CreateStudentCommand command = new CreateStudentCommand(_context, _mapper);
-        //    command.Model = newStudent;
-
-        //    CreateStudentCommandValidator validator = new CreateStudentCommandValidator();
-        //    validator.ValidateAndThrow(command);
-
-        //    return Ok();
-        //}
-    }
-}
->>>>>>> 059afec4f1586d874d6656d52a0ae5a59233c77e

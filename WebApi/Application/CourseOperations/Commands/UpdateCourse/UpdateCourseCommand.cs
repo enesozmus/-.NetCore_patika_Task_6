@@ -15,7 +15,7 @@ namespace WebApi.Application.CourseOperations.Commands.UpdateCourse
         public void Handle()
         {
             var course = _context.Courses
-                                    .SingleOrDefault(x => x.Id == Id);
+                                    .SingleOrDefault(x => x.CourseId == Id);
 
             if (course is null)
                 throw new InvalidOperationException("Guncellemeye calistiginiz kurs/ders bulunamadi!");

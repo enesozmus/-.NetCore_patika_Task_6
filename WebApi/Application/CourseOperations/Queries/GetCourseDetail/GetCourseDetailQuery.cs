@@ -17,7 +17,7 @@ namespace WebApi.Application.CourseOperations.Queries.GetCourseDetail
         public CourseDetailViewModel Handle()
         {
             var course = _context.Courses
-                                    .SingleOrDefault(x => x.Id == courseId);
+                                    .SingleOrDefault(x => x.CourseId == courseId);
 
             if (course is null)
                 throw new InvalidOperationException("Aradıgınız kurs/ders bulunamadi!");
@@ -29,7 +29,7 @@ namespace WebApi.Application.CourseOperations.Queries.GetCourseDetail
 
     public class CourseDetailViewModel
     {
-        public int Id { get; set; }
+        public int CourseId { get; set; }
         public string Name { get; set; }
     }
 }
